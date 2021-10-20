@@ -70,7 +70,7 @@ def update(config, args):
 # ============================================================================
 # LOAD CONFIGURATIONS
 with open(args.cfg) as f:
-    config = yaml.load(f)
+    config = yaml.safe_load(f)
 config = update(config, args)
 
 test_mode = args.test
