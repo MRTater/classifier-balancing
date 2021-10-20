@@ -1,13 +1,10 @@
 """Copyright (c) Facebook, Inc. and its affiliates.
 All rights reserved.
-
 This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
-
 Portions of the source code are from the OLTR project which
 notice below and in LICENSE in the root directory of
 this source tree.
-
 Copyright (c) 2019, Zhongqi Miao
 All rights reserved.
 """
@@ -100,8 +97,8 @@ def load_data(data_root, dataset, phase, batch_size, sampler_dic=None, num_worke
         phase = 'train'
     else:
         txt_split = phase
-    txt = '/research/dept8/fyp21/lj2104/datasets/ImageNet/%s_%s.txt'%(dataset, txt_split)
-
+    txt = './data/%s/%s_%s.txt'%(dataset, dataset, txt_split)
+    # txt = './data/%s/%s_%s.txt'%(dataset, dataset, (phase if phase != 'train_plain' else 'train'))
 
     print('Loading data from %s' % (txt))
 
@@ -122,9 +119,9 @@ def load_data(data_root, dataset, phase, batch_size, sampler_dic=None, num_worke
     set_ = LT_Dataset(data_root, txt, transform)
     print(len(set_))
     if phase == 'test' and test_open:
-        open_txt = '/research/dept8/fyp21/lj2104/datasets/ImageNet/%s_open.txt'%(dataset)
+        open_txt = './data/%s/%s_open.txt'%(dataset, dataset)
         print('Testing with opensets from %s'%(open_txt))
-        open_set_ = LT_Dataset('/research/dept8/fyp21/lj2104/datasets/ImageNet/%s_open'%(dataset), open_txt, transform)
+        open_set_ = LT_Dataset('./data/%s/%s_open'%(dataset, dataset), open_txt, transform)
         set_ = ConcatDataset([set_, open_set_])
 
     if sampler_dic and phase == 'train':
