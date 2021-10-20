@@ -100,7 +100,7 @@ def load_data(data_root, dataset, phase, batch_size, sampler_dic=None, num_worke
         phase = 'train'
     else:
         txt_split = phase
-    txt = './data/%s/%s_%s.txt'%(dataset, dataset, txt_split)
+    txt = '/research/dept8/fyp21/lj2104/datasets/ImageNet/%s_%s.txt'%(dataset, txt_split)
     # txt = './data/%s/%s_%s.txt'%(dataset, dataset, (phase if phase != 'train_plain' else 'train'))
 
     print('Loading data from %s' % (txt))
