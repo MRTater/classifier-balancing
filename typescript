@@ -49,4 +49,976 @@ Script started on Wednesday, October 20, 2021 PM04:10:10 HKT
 [1;30r[29;5H[36mrescale[m[35m:[m [31mfalse[m, [36mroot_decay[m[35m:[m [31mnull[m, [36mtype[m[35m:[m MixedPrioritizedSampler[35m}[m[30;103H[K[30;103H39,26[9C80%[29;26H[?12l[?25h[?25l[1;29r[29;1H
 [1;30r[29;3H[36mscheduler_params[m[35m:[m [35m{[m[36mgamma[m[35m:[m [31m0.1[m, [36mstep_size[m[35m:[m [31m30[m[35m}[m[30;103H[K[30;103H40,26[9C86%[29;26H[?12l[?25h[?25l[1;29r[29;1H
 [1;30r[29;3H[36mstage[m[35m:[m resnext50_square_e90[30;103H[K[30;103H41,26[9C93%[29;26H[?12l[?25h[?25l[1;29r[29;1H
-[1;30r[29;3H[36msub_dir[m[35m:[m models[30;103H[K[30;103H42,17[9CBot[29;17H[?12l[?25h[?25l[30;104H1,26[28;26H[?12l[?25h[?25l[30;104H0[27;26H[?12l[?25h[?25l[30;103H39[26;26H[?12l[?25h[?25l[30;104H8[25;26H[?12l[?25h[?25l[30;107H5[25;25H[?12l[?25h[?25l[30;107H4[25;24H[?12l[?25h[?25l[30;107H3[25;23H[?12l[?25h[?25l[30;107H2[25;22H[?12l[?25h[?25l[30;107H1[25;21H[?12l[?25h[?25l[30;107H0[25;20H[?12l[?25h[?25l[30;106H19[25;19H[?12l[?25h[?25l[30;107H8[25;18H[?12l[?25h[?25l[30;107H7[25;17H[?12l[?25h[?25l[30;107H6[25;16H[?12l[?25h[?25l[30;107H5[25;15H[?12l[?25h[?25l[30;1H[1m-- INSERT --[m[30;103H[K[30;103H38,15[9CBot[25;15H[?12l[?25h[?25l, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[25;86H[K[30;107H4[25;14H[?12l[?25h[?25l, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[25;85H[K[30;107H3[25;13H[?12l[?25h[?25l[31m1[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H4[25;14H[?12l[?25h[?25l[31m8[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H5[25;15H[?12l[?25h[?25l[31m0[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H6[25;16H[?12l[?25h[30;1H[K[25;15H[?25l[30;103H38,15[9CBot[25;15H[?12l[?25h[?25l[30;104H9[26;15H[?12l[?25h[?25l[30;103H40[27;15H[?12l[?25h[?25l[30;104H1[28;15H[?12l[?25h[?25l[30;104H2[29;15H[?12l[?25h[?25l[30;104H1[28;15H[?12l[?25h[?25l[30;104H0[27;15H[?12l[?25h[?25l[30;103H39[26;15H[?12l[?25h[?25l[30;104H8[25;15H[?12l[?25h[?25l[30;104H7[23;15H[?12l[?25h[?25l[30;104H6[22;15H[?12l[?25h[?25l[30;104H5[21;15H[?12l[?25h[?25l[30;104H4[20;15H[?12l[?25h[?25l[30;104H3[
+[1;30r[29;3H[36msub_dir[m[35m:[m models[30;103H[K[30;103H42,17[9CBot[29;17H[?12l[?25h[?25l[30;104H1,26[28;26H[?12l[?25h[?25l[30;104H0[27;26H[?12l[?25h[?25l[30;103H39[26;26H[?12l[?25h[?25l[30;104H8[25;26H[?12l[?25h[?25l[30;107H5[25;25H[?12l[?25h[?25l[30;107H4[25;24H[?12l[?25h[?25l[30;107H3[25;23H[?12l[?25h[?25l[30;107H2[25;22H[?12l[?25h[?25l[30;107H1[25;21H[?12l[?25h[?25l[30;107H0[25;20H[?12l[?25h[?25l[30;106H19[25;19H[?12l[?25h[?25l[30;107H8[25;18H[?12l[?25h[?25l[30;107H7[25;17H[?12l[?25h[?25l[30;107H6[25;16H[?12l[?25h[?25l[30;107H5[25;15H[?12l[?25h[?25l[30;1H[1m-- INSERT --[m[30;103H[K[30;103H38,15[9CBot[25;15H[?12l[?25h[?25l, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[25;86H[K[30;107H4[25;14H[?12l[?25h[?25l, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[25;85H[K[30;107H3[25;13H[?12l[?25h[?25l[31m1[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H4[25;14H[?12l[?25h[?25l[31m8[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H5[25;15H[?12l[?25h[?25l[31m0[m, [36mfixed_scale[m[35m:[m [31m1[m, [36mlam[m[35m:[m [31m1.0[m, [36mmanual_only[m[35m:[m [31mtrue[m, [36mnroot[m[35m:[m [31m2.0[m, [36mptype[m[35m:[m score,[30;107H6[25;16H[?12l[?25h[30;1H[K[25;15H[?25l[30;103H38,15[9CBot[25;15H[?12l[?25h[?25l[30;104H9[26;15H[?12l[?25h[?25l[30;103H40[27;15H[?12l[?25h[?25l[30;104H1[28;15H[?12l[?25h[?25l[30;104H2[29;15H[?12l[?25h[?25l[30;104H1[28;15H[?12l[?25h[?25l[30;104H0[27;15H[?12l[?25h[?25l[30;103H39[26;15H[?12l[?25h[?25l[30;104H8[25;15H[?12l[?25h[?25l[30;104H7[23;15H[?12l[?25h[?25l[30;104H6[22;15H[?12l[?25h[?25l[30;104H5[21;15H[?12l[?25h[?25l[30;104H4[20;15H[?12l[?25h[?25l[30;104H3[19;15H[?12l[?25h[?25l[30;104H2[18;15H[?12l[?25h[?25l[30;104H1[17;15H[?12l[?25h[?25l[30;104H0[16;15H[?12l[?25h[?25l[30;103H29[15;15H[?12l[?25h[?25l[30;104H8[14;15H[?12l[?25h[?25l[30;104H7[13;15H[?12l[?25h[?25l[30;104H6[12;15H[?12l[?25h[?25l[30;104H5,13[11;13H[?12l[?25h[?25l[30;104H4,14[10;14H[?12l[?25h[?25l[30;104H3,15[9;15H[?12l[?25h[?25l[30;104H2[7;15H[?12l[?25h[?25l[30;104H1[6;15H[?12l[?25h[?25l[30;104H0,14[5;14H[?12l[?25h[?25l[30;103H19,15[4;15H[?12l[?25h[?25l[30;104H8,13[3;13H[?12l[?25h[?25l[30;104H7,15[2;15H[?12l[?25h[?25l[30;104H6[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36moptim_params[m[35m:[m [35m{[m[36mlr[m[35m:[m [31m0.1[m, [36mmomentum[m[35m:[m [31m0.9[m, [36mweight_decay[m[35m:[m [31m0.0005[m[35m}[m[30;103H[K[30;103H15,15[9C93%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36mdef_file[m[35m:[m /research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/DotProductClassifier.py[30;103H[K[30;103H14,15[9C86%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;3H[36mclassifier[m[35m:[m[30;103H[K[30;103H13,13[9C80%[1;13H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mnetworks[m[35m:[m[30;103H[K[30;103H12,9[10C73%[1;9H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mmodel_dir[m[35m:[m [31mnull[m[30;103H[K[30;103H11,15[9C66%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mmemory[m[35m:[m [35m{[m[36mcentroids[m[35m:[m [31mfalse[m, [36minit_centroids[m[35m:[m [31mfalse[m[35m}[m[29;1H[94m@                                                                                                                       [m[30;103H[K[30;103H10,15[9C60%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mlast[m[35m:[m [31mfalse[m[30;103H[K[30;103H9,11[10C57%[1;11H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mendlr[m[35m:[m [31m0.0[m[30;103H[K[30;103H8,10[10C50%[1;10H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36mweight[m[35m:[m [31m1.0[m[30;103H[K[30;103H7,15[10C42%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36moptim_params[m[35m:[m [31mnull[m[30;103H[K[30;103H6,15[10C35%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36mloss_params[m[35m:[m [35m{}[m[30;103H[K[30;103H5,15[10C28%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;5H[36mdef_file[m[35m:[m /research/dept8/fyp21/lj2104/lyy/classifier-balancing/loss/SoftmaxLoss.py[30;103H[K[30;103H4,15[10C21%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;3H[36mPerformanceLoss[m[35m:[m[30;103H[K[30;103H3,15[10C14%[1;15H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mcriterions[m[35m:[m[30;103H[K[30;103H2,11[11C7%[1;11H[?12l[?25h[?25l[1;29r[1;1H[L[1;30r[1;1H[36mcoslr[m[35m:[m [31mtrue[m[30;103H[K[30;103H1,11[10CTop[1;11H[?12l[?25h[?25l[30;103H2[2;11H[?12l[?25h[?25l[30;103H3,15[3;15H[?12l[?25h[?25l[30;103H4[4;15H[?12l[?25h[?25l[30;103H5[5;15H[?12l[?25h[?25l[30;103H6[6;15H[?12l[?25h[?25l[30;103H7[7;15H[?12l[?25h[?25l[30;103H8,10[8;10H[?12l[?25h[?25l[30;103H9,11[9;11H[?12l[?25h[?25l[30;103H10,15[10;15H[?12l[?25h[?25l[30;104H1[11;15H[?12l[?25h[?25l[30;104H2,9 [12;9H[?12l[?25h[?25l[30;104H3,13[13;13H[?12l[?25h[?25l[30;104H4,15[14;15H[?12l[?25h[?25l[30;104H5[15;15H[?12l[?25h[?25l[30;104H6[16;15H[?12l[?25h[?25l[30;103H[K[30;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"config/ImageNet_LT/feat_squareroot.yaml" 42L, 1836C written
+[?1l>[?12l[?25h[?1049l[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> cd ../script/
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/script> sbatch cRT_square_root_sampling.sh 
+sbatch: Using features: ubuntu18,highcpucount
+Submitted batch job 246859
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/script> 0..[K[K[Kcd ..
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy> cd c
+checkpoints/          cifar/                classifier-balancing/ 
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy> cd classifier-balancing/
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git push[K[K[K[Kcommit
+# On branch main
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   config/ImageNet_LT/feat_squareroot.yaml
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	typescript
+no changes added to commit (use "git add" and/or "git commit -a")
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git commit .[K[K[K[K[K[K[Kadd .
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git commit 
+[?1049h[?1h=[1;30r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[30;1H".git/COMMIT_EDITMSG" 13L, 372C[2;1H# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: LUO Yiyang <yyluo9@linux10.cse.cuhk.edu.hk>
+#
+# On branch main
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#[7Cmodified:   config/ImageNet_LT/feat_squareroot.yaml
+#[7Cnew file:   typescript
+#
+[94m~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [1;1H[?12l[?25h[?25l[m[30;1H[1m-- INSERT --[m[30;13H[K[1;1H[?12l[?25h[?25ly[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[30;1H[K[1;3H[?25l[?12l[?25h[?25l[30;1H:[?12l[?25hwq[?25l".git/COMMIT_EDITMSG" 13L, 375C written
+[?1l>[?12l[?25h[?1049l[main 69dfaf9] yes
+ Committer: LUO Yiyang <yyluo9@linux10.cse.cuhk.edu.hk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 57 insertions(+), 5 deletions(-)
+ create mode 100644 typescript
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': MRTater
+Password for 'https://MRTater@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/MRTater/classifier-balancing.git/'
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': MRTater
+Password for 'https://MRTater@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 24 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 2.93 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MRTater/classifier-balancing.git
+   ad95700..69dfaf9  main -> main
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> s[K
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> 
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> 
+[7m [27mlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> bash
+[?1034hlinux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> cd ..
+linux10:/research/dept8/fyp21/lj2104/lyy> cd script/
+linux10:/research/dept8/fyp21/lj2104/lyy/script> ls
+./					      CIFAR10LT_imf0.1_resnet32sx1_beta0.9600.sh  RIDE_x50_stage1.sh
+../					      cRT_square_root_sampling.sh		  RIDE_x50_stage1_test.sh
+CIFAR100LT_imf0.01_resnet32sx1_beta0.9950.sh  data/					  RIDE_x50_stage2.sh
+CIFAR100LT_imf0.02_resnet32sx1_bata0.9900.sh  logs/					  RIDE_x50_stage2_test.sh
+CIFAR100LT_imf0.1_resnet32sx1_bata0.7200.sh   R10.sh					  saved/
+CIFAR10LT_imf0.01_resnet32sx1_beta0.9980.sh   RIDE.sh					  test_r50_RIDE.sh
+CIFAR10LT_imf0.02_resnet32sx1_beta0.9980.sh   RIDE_stage2_r50.sh			  test_r50_RIDE_stage2.sh
+linux10:/research/dept8/fyp21/lj2104/lyy/script> cat cRT_square_root_sampling.sh 
+#!/bin/bash
+#SBATCH --job-name=ImageNet_squareroot_Lyy
+#SBATCH --mail-user=yyluo9@cse.cuhk.edu.hk
+#SBATCH --mail-type=ALL
+#SBATCH --output=/research/dept8/fyp21/lj2104/lyy/Logs/classifier-balancing/squareroot.log
+#SBATCH --gres=gpu:4
+#SBATCH -c 40
+#SBATCH --constraint=ubuntu18,highcpucount
+#SBATCH -p batch_72h
+
+source activate lyyRIDE
+python3 /research/dept8/fyp21/lj2104/lyy/classifier-balancing/main.py \
+ --cfg \
+ "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/config/ImageNet_LT/feat_squareroot.yaml"
+linux10:/research/dept8/fyp21/lj2104/lyy/script> cat ../Logs/classifier-balancing/squareroot.log 
+/var/spool/slurmd/job246859/slurm_script: line 11: activate: No such file or directory
+Traceback (most recent call last):
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/main.py", line 19, in <module>
+    from run_networks import model
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/run_networks.py", line 22, in <module>
+    from tqdm import tqdm
+ModuleNotFoundError: No module named 'tqdm'
+linux10:/research/dept8/fyp21/lj2104/lyy/script> conda activate lyyRIDE
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> pip install lyyRIDe[KE[K[K[K[K[K[K[Ktqdm
+Requirement already satisfied: tqdm in /research/dept8/fyp21/lj2104/anaconda3/envs/lyyRIDE/lib/python3.7/site-packages (4.62.3)
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> vim cRT_square_root_sampling.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;30r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[30;1H"cRT_square_root_sampling.sh" 14L, 515C[>c[1;1H[34m#!/[m[34m[103mbin[m[34m/bash
+#SBATCH --job-name=ImageNet_squareroot_Lyy
+#SBATCH --mail-user=yyluo9@cse.cuhk.edu.hk
+#SBATCH --mail-type=ALL
+#SBATCH --output=/research/dept8/fyp21/lj2104/lyy/Logs/classifier-balancing/squareroot.log
+#SBATCH --gres=gpu:4
+#SBATCH -c 40
+#SBATCH --constraint=ubuntu18,highcpucount
+#SBATCH -p batch_72h[m
+
+[38;5;130msource[m activate lyyRIDE
+python3 /research/dept8/fyp21/lj2104/lyy/classifier-balancing/main.py [38;5;130m\[m
+ [35m--cfg[m [38;5;130m\
+[m [38;5;130m"[m[31m/research/dept8/fyp21/lj2104/lyy/classifier-balancing/config/ImageNet_LT/feat_squareroot.yaml[m[38;5;130m"[m
+[94m~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H6,1[11CAll[6;1H[?12l[?25h[?25l[30;1H[K[30;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[30;1H[K[30;1H[?1l>[?12l[?25h[?1049l(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> sbatch cRT_square_root_sampling.sh 
+sbatch: Using features: ubuntu18,highcpucount
+Submitted batch job 246924
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> ls[K[Kpython3
+Python 3.7.11 (default, Jul 27 2021, 14:32:16) 
+[GCC 7.5.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+[?2004h>>> import tqdm
+[?2004l[?2004h>>> quit()
+[?2004l(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> cat ../Logs/l[Kclassifier-balancing/squareroot.log 
+/var/spool/slurmd/job246924/slurm_script: line 11: activate: No such file or directory
+Loading dataset from: /research/dept8/fyp21/lj2104/datasets/ImageNet
+{'coslr': True,
+ 'criterions': {'PerformanceLoss': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/loss/SoftmaxLoss.py',
+                                    'loss_params': {},
+                                    'optim_params': None,
+                                    'weight': 1.0}},
+ 'endlr': 0.0,
+ 'last': False,
+ 'memory': {'centroids': False, 'init_centroids': False},
+ 'model_dir': None,
+ 'networks': {'classifier': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/DotProductClassifier.py',
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'feat_dim': 2048,
+                                        'log_dir': './logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'num_classes': 1000,
+                                        'stage1_weights': False}},
+              'feat_model': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/ResNext50Feature.py',
+                             'fix': False,
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'dropout': None,
+                                        'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'stage1_weights': False,
+                                        'use_fc': False,
+                                        'use_selfatt': False}}},
+ 'shuffle': False,
+ 'training_opt': {'backbone': 'resnext50',
+                  'batch_size': 256,
+                  'dataset': 'ImageNet_LT',
+                  'display_step': 10,
+                  'feature_dim': 2048,
+                  'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                  'log_root': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT',
+                  'num_classes': 1000,
+                  'num_epochs': 180,
+                  'num_workers': 12,
+                  'open_threshold': 0.1,
+                  'sampler': {'alpha': 1.0,
+                              'cycle': 0,
+                              'decay_gap': 30,
+                              'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/data/MixedPrioritizedSampler.py',
+                              'epochs': 180,
+                              'fixed_scale': 1,
+                              'lam': 1.0,
+                              'manual_only': True,
+                              'nroot': 2.0,
+                              'ptype': 'score',
+                              'rescale': False,
+                              'root_decay': None,
+                              'type': 'MixedPrioritizedSampler'},
+                  'scheduler_params': {'gamma': 0.1, 'step_size': 30},
+                  'stage': 'resnext50_square_e90',
+                  'sub_dir': 'models'}}
+Loading data from ./data/ImageNet_LT/ImageNet_LT_train.txt
+Use data transformation: Compose(
+    RandomResizedCrop(size=(224, 224), scale=(0.08, 1.0), ratio=(0.75, 1.3333), interpolation=PIL.Image.BILINEAR)
+    RandomHorizontalFlip(p=0.5)
+    ColorJitter(brightness=[0.6, 1.4], contrast=[0.6, 1.4], saturation=[0.6, 1.4], hue=None)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+Traceback (most recent call last):
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/main.py", line 124, in <module>
+    for x in splits}
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/main.py", line 124, in <dictcomp>
+    for x in splits}
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/data/dataloader.py", line 119, in load_data
+    set_ = LT_Dataset(data_root, txt, transform)
+  File "/research/dept8/fyp21/lj2104/lyy/classifier-balancing/data/dataloader.py", line 69, in __init__
+    with open(txt) as f:
+FileNotFoundError: [Errno 2] No such file or directory: './data/ImageNet_LT/ImageNet_LT_train.txt'
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/script> cd[K[Kcd ..
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy> cd classifier-balancing/
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> git pull
+Already up-to-date.
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> cd[K[Kls
+./		    config/			 .git/	     logger.py*  models/	   tau_norm.py*
+../		    CONTRIBUTING.md		 .gitignore  logs/	 __pycache__/	   typescript
+assets/		    cRT_square_root_sampling.sh  layers/     loss/	 README.md	   utils.py*
+CODE_OF_CONDUCT.md  data/			 LICENSE     main.py	 run_networks.py*
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> sbatch [K[K[K[K[K[K[Ksc[Kbathc cRT_square_root_sampling.sh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kch cRT_square_root_sampling.sh 
+sbatch: Using features: ubuntu18,highcpucount
+Submitted batch job 246926
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            243000 kinglyuke     tmux    yfgao PD       0:00      1 (QOSMaxGRESPerUser)
+            243207 kinglyuke     tmux     lijj PD       0:00      1 (QOSMaxGRESPerUser)
+            246110  cwfu_gpu     bash   fblu21 PD       0:00      1 (Resources)
+            246802 batch_72h  2atss80   sjqian PD       0:00      1 (Resources)
+            246878 batch_72h      r11   pgchen PD       0:00      1 (Priority)
+            246881 batch_72h convnerf   ylchen PD       0:00      1 (Priority)
+            246916 batch_72h a_baseli   pgchen PD       0:00      1 (Priority)
+            246902 batch_72h       a1   pgchen PD       0:00      1 (Priority)
+            246926 batch_72h ImageNet   yyluo9 PD       0:00      1 (Priority)
+            246610 pheng_gpu     bash   jzwang PD       0:00      1 (Resources)
+            246804 pheng_gpu     bash   jpli21 PD       0:00      1 (AssocGrpGRES)
+            246652  cwfu_gpu     bash   fblu21 PD       0:00      1 (Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions)
+            246803    gpu_2h     bash yukangch PD       0:00      1 (QOSMaxGRESPerUser)
+            246826  ex_batch     TEST   zxzhao PD       0:00      1 (QOSMaxGRESPerUser)
+            246527  ex_batch    jrgpu   hcchow PD       0:00      1 (Dependency)
+            245856   gpu_24h      zsh   wangty PD       0:00      1 (ReqNodeNotAvail, UnavailableNodes:gpu23)
+            246047   gpu_24h   python    khhui PD       0:00      1 (AssocGrpGRES)
+            246186   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            246604   gpu_24h     bash    liuhy PD       0:00      1 (QOSMaxGRESPerUser)
+            246760   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246923   gpu_24h     bash   fblu21 PD       0:00      1 (Priority)
+            246925   gpu_24h     bash   fblu21 PD       0:00      1 (Priority)
+            246851   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            246783   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246921   gpu_24h     bash wltang21 PD       0:00      1 (Priority)
+            243206 kinglyuke     tmux     lijj  R 2-15:23:23      1 projgpu1
+            242964 kinglyuke     tmux    yfgao  R 2-22:05:33      1 projgpu2
+            245705 batch_72h swin_ada   zttian  R 1-19:58:55      1 gpu3
+            246002 pheng_gpu     bash   jpli21  R    9:06:18      1 projgpu12
+            246051  cwfu_gpu     bash     mywu  R   20:05:35      1 projgpu15
+            246684 batch_72h swin_ada    linhj  R    4:28:58      1 gpu5
+            246682 batch_72h swin_ada   xinlai  R    8:27:31      1 gpu26
+            246290 pheng_gpu     bash   zxzhao  R    9:06:18      1 projgpu12
+            245706 batch_72h swin_ada   zttian  R 1-09:58:31      1 gpu22
+            246635 batch_72h  287fcos yukangch  R    8:07:57      1 gpu50
+            246120 pheng_gpu     bash   jzwang  R   11:26:44      1 projgpu4
+            246456 pheng_gpu     tmux     jqxu  R    9:06:18      1 projgpu12
+            246464 batch_72h     CIDS zszhong2  R 1-01:53:00      1 gpu49
+            246641 batch_72h swin_ada    linhj  R   16:45:42      1 gpu47
+            246666 batch_72h   hkd288   yxchen  R   16:43:22      1 gpu51
+            246634 batch_72h  278fcos yukangch  R   18:06:11      1 gpu48
+            246465 batch_72h     CIDS zszhong2  R   23:24:06      1 gpu42
+            246440 batch_72h   hkd284   yxchen  R 1-05:20:27      1 gpu53
+            246681 batch_72h swin_ada   xinlai  R   19:29:21      1 gpu6
+            246437 batch_72h  2atss79   sjqian  R 1-06:40:03      1 gpu52
+            246243 batch_72h train_ex    ymjin  R 1-23:43:54      1 gpu23
+            246661 pheng_gpu     bash  kaichen  R   10:24:41      1 projgpu3
+            246069 kinglyuke     bash   mlyang  R 2-02:48:30      1 projgpu1
+            246667 pheng_gpu     bash   bqyang  R   10:24:41      1 projgpu3
+            246519 kinglyuke     bash   mlyang  R   22:24:01      1 projgpu2
+            246821 pheng_gpu     bash    ymjin  R    5:59:05      1 projgpu3
+            246660 pheng_gpu     bash   bqyang  R   19:26:51      1 projgpu5
+            246889 pheng_gpu     bash  mrjiang  R    3:17:12      1 projgpu6
+            246846 pheng_gpu     bash      bli  R    4:54:41      1 projgpu5
+            246842 pheng_gpu     bash     qdou  R    5:04:15      1 projgpu6
+            246824 pheng_gpu     bash     qdou  R    6:29:20      1 projgpu4
+            246799 kinglyuke      zsh   zhangy  R    8:39:41      1 projgpu2
+            246795 pheng_gpu     bash      bli  R    8:41:33      1 projgpu10
+            246791 pheng_gpu     bash    ymjin  R    8:59:53      1 projgpu12
+            246784 kinglyuke     bash   mlyang  R    9:28:52      1 projgpu1
+            246741 pheng_gpu     tmux     jqxu  R   11:26:30      1 projgpu4
+            246683 pheng_gpu     bash     qdou  R   19:19:24      1 projgpu11
+            246591 pheng_gpu     bash   jpli21  R   19:48:28      1 projgpu11
+            246645 pheng_gpu     bash   bqyang  R   20:13:20      1 projgpu6
+            246598 kinglyuke     bash   mlyang  R   22:22:00      1 projgpu2
+            246455 pheng_gpu     tmux     jqxu  R 1-05:46:32      1 projgpu5
+            246432 kinglyuke      zsh   zhangy  R 1-06:47:53      1 projgpu2
+            246431 kinglyuke      zsh   zhangy  R 1-06:48:54      1 projgpu2
+            246396 pheng_gpu     bash  mrjiang  R 1-09:35:14      1 projgpu5
+            246394 pheng_gpu     bash  mrjiang  R 1-09:35:30      1 projgpu10
+            246393 pheng_gpu     bash  mrjiang  R 1-09:35:39      1 projgpu11
+            246387 pheng_gpu     bash   yangyu  R 1-09:50:31      1 projgpu9
+            246384 pheng_gpu     bash   yangyu  R 1-09:57:22      1 projgpu9
+            246364 pheng_gpu     bash  kaichen  R 1-10:52:50      1 projgpu6
+            246366 pheng_gpu     bash  kaichen  R 1-10:52:50      1 projgpu5
+            246362 pheng_gpu     bash  kaichen  R 1-10:56:28      1 projgpu6
+            246351 pheng_gpu     bash    ymjin  R 1-12:09:07      1 projgpu6
+            246224 pheng_gpu     bash   jpli21  R 2-01:07:06      1 projgpu6
+            246920    gpu_2h     bash    kcli9  R      47:18      1 gpu39
+            246915    gpu_2h     bash     yuli  R    1:50:54      1 gpu41
+            246601  ex_batch   job.sh   jpli21  R    5:41:06      1 gpu55
+            246877    gpu_8h     bash    hjsu9  R    3:55:01      1 gpu25
+            246876    gpu_8h     bash    hjsu9  R    3:55:27      1 gpu38
+            246856    gpu_8h     bash    hjsu9  R    4:26:50      1 gpu41
+            246855    gpu_8h     bash    hjsu9  R    4:27:01      1 gpu38
+            246837    gpu_8h     bash jzzhang2  R    5:46:43      1 gpu38
+            246525  ex_batch    jrgpu   hcchow  R 1-02:00:20      1 gpu57
+            246494  ex_batch      HiC   qyli21  R 1-04:55:19      1 gpu58
+            246446  ex_batch     TEST   zxzhao  R 1-06:03:12      1 gpu54
+            246246   gpu_24h     bash     mywu  R   11:35:53      1 projgpu8
+            246263   gpu_24h     bash    liuhy  R   22:16:01      1 gpu1
+            246504   gpu_24h     bash    rygao  R    4:40:31      1 gpu28
+            246642   gpu_24h     bash yljiang0  R       0:59      1 gpu30
+            246646   gpu_24h     bash   fblu21  R       6:14      1 gpu33
+            246372   gpu_24h     bash    msxie  R   13:51:25      1 gpu18
+            246520   gpu_24h liga_bas   ylchen  R   12:32:10      1 gpu45
+            246405   gpu_24h     bash    msxie  R    5:29:37      1 gpu34
+            246730   gpu_24h    test4 jjxiong9  R    3:35:32      1 gpu16
+            246556   gpu_24h    test2 jjxiong9  R   21:22:02      1 gpu10
+            246816   gpu_24h     bash    ymjin  R    4:41:04      1 projgpu9
+            243178   special     bash  wuzheng  R 13-02:59:30      1 gpu2
+            246736   gpu_24h     bash  kltang9  R   10:16:45      1 gpu7
+            246602   gpu_24h     bash   jpli21  R   19:37:58      1 gpu27
+            246593   gpu_24h     bash   jpli21  R   21:05:46      1 gpu24
+            246800   gpu_24h     bash   xiwang  R    7:26:40      1 gpu9
+            246868   gpu_24h  python3    mhxia  R    3:36:03      1 gpu20
+            246914   gpu_24h   python     jyhu  R    1:53:03      1 gpu8
+            246654   gpu_24h     bash   fblu21  R       2:30      1 gpu35
+            246883   gpu_24h     bash    qxlai  R    3:34:02      1 gpu29
+            246643   gpu_24h     bash yljiang0  R       0:29      1 gpu36
+            246922   gpu_24h      zsh   yqchen  R       9:55      1 gpu37
+            246919   gpu_24h     bash    taohu  R    1:15:12      1 gpu24
+            246906   gpu_24h     tcsh     hshi  R    2:39:09      1 gpu11
+            246900   gpu_24h     bash   httse9  R    2:54:59      1 gpu10
+            246879   gpu_24h     bash     cbai  R    3:36:03      1 gpu12
+            246880   gpu_24h     bash     cbai  R    3:36:03      1 gpu14
+            246882   gpu_24h     bash    qxlai  R    3:36:03      1 gpu44
+            246874   gpu_24h     bash   cyhong  R    3:57:02      1 gpu15
+            246866   gpu_24h  python3    mhxia  R    4:15:56      1 gpu13
+            246864   gpu_24h     bash mxchen21  R    4:16:27      1 gpu17
+            246852   gpu_24h     bash   wlchen  R    4:29:04      1 gpu13
+            246839   gpu_24h     bash   xiwang  R    5:22:07      1 gpu9
+            246836   gpu_24h     bash    taohu  R    6:08:38      1 gpu24
+            246786   gpu_24h     bash    qxlai  R    9:23:52      1 gpu46
+            246777   gpu_24h     tcsh    mhxia  R    9:43:20      1 gpu31
+            246771   gpu_24h     bash    qxlai  R    9:51:12      1 gpu23
+            246770   gpu_24h     bash     zlhe  R    9:58:27      1 projgpu8
+            246769   gpu_24h     bash     zlhe  R    9:59:58      1 projgpu8
+            246768   gpu_24h     bash     zlhe  R   10:03:00      1 projgpu8
+            246764   gpu_24h     bash     zlhe  R   10:10:41      1 projgpu3
+            246763   gpu_24h     bash     cbai  R   10:16:15      1 gpu14
+            246762   gpu_24h     bash     cbai  R   10:16:45      1 gpu12
+            246752   gpu_24h     bash    lyluo  R   10:53:39      1 gpu25
+            246753   gpu_24h     bash    lyluo  R   10:53:39      1 gpu37
+            246747   gpu_24h     bash     yuli  R   11:10:17      1 gpu43
+            246244   gpu_24h      zsh   wangty  R   11:11:48      1 projgpu8
+            246744   gpu_24h     bash     yuli  R   11:12:18      1 gpu44
+            246424   gpu_24h     bash wltang21  R   11:42:03      1 gpu32
+            246712   gpu_24h     bash     qdou  R   18:38:12      1 gpu27
+            246710   gpu_24h     bash     qdou  R   18:43:45      1 gpu21
+            246656   gpu_24h     bash     yuli  R   20:01:45      1 gpu31
+            246637   gpu_24h     bash mxchen21  R   20:38:32      1 gpu19
+            246636   gpu_24h     bash mxchen21  R   20:45:01      1 gpu8
+            246628   gpu_24h     bash   bqyang  R   21:04:46      1 gpu16
+            246623   gpu_24h     bash   httse9  R   21:17:00      1 gpu15
+            246612   gpu_24h     bash    ymjin  R   21:47:33      1 gpu29
+            246564   gpu_24h     bash    liuhy  R   22:44:13      1 projgpu5
+            246565   gpu_24h     bash    qxtan  R   23:54:22      1 gpu15
+            246566   gpu_24h     bash    qxtan  R   23:54:22      1 gpu19
+            246835  special4     bash    khhui  R    6:08:38      1 projgpu7
+            246104  special4     bash   wangty  R 2-10:22:02      1 projgpu7
+            246095  special4     bash    khhui  R 2-10:38:51      1 projgpu7
+            243345  special3     bash    tjliu  R 12-10:25:23      1 gpu4
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> sbatch -p put_2[K[K[K[K[Kgpu_2h cr[KRT_square_root_sampling.sh 
+sbatch: Using features: ubuntu18,highcpucount
+Submitted batch job 246927
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> sq[K[Ksqueue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            243000 kinglyuke     tmux    yfgao PD       0:00      1 (QOSMaxGRESPerUser)
+            243207 kinglyuke     tmux     lijj PD       0:00      1 (QOSMaxGRESPerUser)
+            246110  cwfu_gpu     bash   fblu21 PD       0:00      1 (Resources)
+            246802 batch_72h  2atss80   sjqian PD       0:00      1 (Resources)
+            246878 batch_72h      r11   pgchen PD       0:00      1 (Priority)
+            246881 batch_72h convnerf   ylchen PD       0:00      1 (Priority)
+            246916 batch_72h a_baseli   pgchen PD       0:00      1 (Priority)
+            246902 batch_72h       a1   pgchen PD       0:00      1 (Priority)
+            246926 batch_72h ImageNet   yyluo9 PD       0:00      1 (Priority)
+            246610 pheng_gpu     bash   jzwang PD       0:00      1 (Resources)
+            246804 pheng_gpu     bash   jpli21 PD       0:00      1 (AssocGrpGRES)
+            246652  cwfu_gpu     bash   fblu21 PD       0:00      1 (Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions)
+            246803    gpu_2h     bash yukangch PD       0:00      1 (QOSMaxGRESPerUser)
+            246826  ex_batch     TEST   zxzhao PD       0:00      1 (QOSMaxGRESPerUser)
+            246527  ex_batch    jrgpu   hcchow PD       0:00      1 (Dependency)
+            245856   gpu_24h      zsh   wangty PD       0:00      1 (ReqNodeNotAvail, UnavailableNodes:gpu23)
+            246047   gpu_24h   python    khhui PD       0:00      1 (AssocGrpGRES)
+            246186   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            246604   gpu_24h     bash    liuhy PD       0:00      1 (QOSMaxGRESPerUser)
+            246760   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246923   gpu_24h     bash   fblu21 PD       0:00      1 (QOSMaxGRESPerUser)
+            246925   gpu_24h     bash   fblu21 PD       0:00      1 (QOSMaxGRESPerUser)
+            246921   gpu_24h     bash wltang21 PD       0:00      1 (Priority)
+            246783   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246851   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            243206 kinglyuke     tmux     lijj  R 2-15:23:56      1 projgpu1
+            242964 kinglyuke     tmux    yfgao  R 2-22:06:06      1 projgpu2
+            245705 batch_72h swin_ada   zttian  R 1-19:59:28      1 gpu3
+            246002 pheng_gpu     bash   jpli21  R    9:06:51      1 projgpu12
+            246051  cwfu_gpu     bash     mywu  R   20:06:08      1 projgpu15
+            246684 batch_72h swin_ada    linhj  R    4:29:31      1 gpu5
+            246682 batch_72h swin_ada   xinlai  R    8:28:04      1 gpu26
+            246290 pheng_gpu     bash   zxzhao  R    9:06:51      1 projgpu12
+            245706 batch_72h swin_ada   zttian  R 1-09:59:04      1 gpu22
+            246635 batch_72h  287fcos yukangch  R    8:08:30      1 gpu50
+            246120 pheng_gpu     bash   jzwang  R   11:27:17      1 projgpu4
+            246456 pheng_gpu     tmux     jqxu  R    9:06:51      1 projgpu12
+            246464 batch_72h     CIDS zszhong2  R 1-01:53:33      1 gpu49
+            246641 batch_72h swin_ada    linhj  R   16:46:15      1 gpu47
+            246666 batch_72h   hkd288   yxchen  R   16:43:55      1 gpu51
+            246634 batch_72h  278fcos yukangch  R   18:06:44      1 gpu48
+            246465 batch_72h     CIDS zszhong2  R   23:24:39      1 gpu42
+            246440 batch_72h   hkd284   yxchen  R 1-05:21:00      1 gpu53
+            246681 batch_72h swin_ada   xinlai  R   19:29:54      1 gpu6
+            246437 batch_72h  2atss79   sjqian  R 1-06:40:36      1 gpu52
+            246243 batch_72h train_ex    ymjin  R 1-23:44:26      1 gpu23
+            246661 pheng_gpu     bash  kaichen  R   10:25:13      1 projgpu3
+            246069 kinglyuke     bash   mlyang  R 2-02:49:02      1 projgpu1
+            246667 pheng_gpu     bash   bqyang  R   10:25:13      1 projgpu3
+            246519 kinglyuke     bash   mlyang  R   22:24:33      1 projgpu2
+            246821 pheng_gpu     bash    ymjin  R    5:59:37      1 projgpu3
+            246660 pheng_gpu     bash   bqyang  R   19:27:23      1 projgpu5
+            246889 pheng_gpu     bash  mrjiang  R    3:17:44      1 projgpu6
+            246846 pheng_gpu     bash      bli  R    4:55:13      1 projgpu5
+            246842 pheng_gpu     bash     qdou  R    5:04:47      1 projgpu6
+            246824 pheng_gpu     bash     qdou  R    6:29:52      1 projgpu4
+            246799 kinglyuke      zsh   zhangy  R    8:40:13      1 projgpu2
+            246795 pheng_gpu     bash      bli  R    8:42:05      1 projgpu10
+            246791 pheng_gpu     bash    ymjin  R    9:00:25      1 projgpu12
+            246784 kinglyuke     bash   mlyang  R    9:29:24      1 projgpu1
+            246741 pheng_gpu     tmux     jqxu  R   11:27:02      1 projgpu4
+            246683 pheng_gpu     bash     qdou  R   19:19:56      1 projgpu11
+            246591 pheng_gpu     bash   jpli21  R   19:49:00      1 projgpu11
+            246645 pheng_gpu     bash   bqyang  R   20:13:52      1 projgpu6
+            246598 kinglyuke     bash   mlyang  R   22:22:32      1 projgpu2
+            246455 pheng_gpu     tmux     jqxu  R 1-05:47:04      1 projgpu5
+            246432 kinglyuke      zsh   zhangy  R 1-06:48:25      1 projgpu2
+            246431 kinglyuke      zsh   zhangy  R 1-06:49:26      1 projgpu2
+            246396 pheng_gpu     bash  mrjiang  R 1-09:35:46      1 projgpu5
+            246394 pheng_gpu     bash  mrjiang  R 1-09:36:02      1 projgpu10
+            246393 pheng_gpu     bash  mrjiang  R 1-09:36:11      1 projgpu11
+            246387 pheng_gpu     bash   yangyu  R 1-09:51:03      1 projgpu9
+            246384 pheng_gpu     bash   yangyu  R 1-09:57:54      1 projgpu9
+            246364 pheng_gpu     bash  kaichen  R 1-10:53:22      1 projgpu6
+            246366 pheng_gpu     bash  kaichen  R 1-10:53:22      1 projgpu5
+            246362 pheng_gpu     bash  kaichen  R 1-10:57:00      1 projgpu6
+            246351 pheng_gpu     bash    ymjin  R 1-12:09:39      1 projgpu6
+            246224 pheng_gpu     bash   jpli21  R 2-01:07:38      1 projgpu6
+            246927    gpu_2h ImageNet   yyluo9  R       0:10      1 gpu40
+            246920    gpu_2h     bash    kcli9  R      47:50      1 gpu39
+            246915    gpu_2h     bash     yuli  R    1:51:26      1 gpu41
+            246601  ex_batch   job.sh   jpli21  R    5:41:38      1 gpu55
+            246877    gpu_8h     bash    hjsu9  R    3:55:33      1 gpu25
+            246876    gpu_8h     bash    hjsu9  R    3:55:59      1 gpu38
+            246856    gpu_8h     bash    hjsu9  R    4:27:22      1 gpu41
+            246855    gpu_8h     bash    hjsu9  R    4:27:33      1 gpu38
+            246837    gpu_8h     bash jzzhang2  R    5:47:15      1 gpu38
+            246525  ex_batch    jrgpu   hcchow  R 1-02:00:52      1 gpu57
+            246494  ex_batch      HiC   qyli21  R 1-04:55:51      1 gpu58
+            246446  ex_batch     TEST   zxzhao  R 1-06:03:44      1 gpu54
+            246246   gpu_24h     bash     mywu  R   11:36:25      1 projgpu8
+            246263   gpu_24h     bash    liuhy  R   22:16:33      1 gpu1
+            246504   gpu_24h     bash    rygao  R    4:41:03      1 gpu28
+            246642   gpu_24h     bash yljiang0  R       1:30      1 gpu30
+            246646   gpu_24h     bash   fblu21  R       6:45      1 gpu33
+            246372   gpu_24h     bash    msxie  R   13:51:56      1 gpu18
+            246520   gpu_24h liga_bas   ylchen  R   12:32:41      1 gpu45
+            246405   gpu_24h     bash    msxie  R    5:30:08      1 gpu34
+            246730   gpu_24h    test4 jjxiong9  R    3:36:03      1 gpu16
+            246556   gpu_24h    test2 jjxiong9  R   21:22:33      1 gpu10
+            246816   gpu_24h     bash    ymjin  R    4:41:35      1 projgpu9
+            243178   special     bash  wuzheng  R 13-03:00:01      1 gpu2
+            246736   gpu_24h     bash  kltang9  R   10:17:16      1 gpu7
+            246602   gpu_24h     bash   jpli21  R   19:38:29      1 gpu27
+            246593   gpu_24h     bash   jpli21  R   21:06:17      1 gpu24
+            246800   gpu_24h     bash   xiwang  R    7:27:11      1 gpu9
+            246868   gpu_24h  python3    mhxia  R    3:36:34      1 gpu20
+            246914   gpu_24h   python     jyhu  R    1:53:34      1 gpu8
+            246654   gpu_24h     bash   fblu21  R       3:01      1 gpu35
+            246883   gpu_24h     bash    qxlai  R    3:34:33      1 gpu29
+            246643   gpu_24h     bash yljiang0  R       1:00      1 gpu36
+            246922   gpu_24h      zsh   yqchen  R      10:26      1 gpu37
+            246919   gpu_24h     bash    taohu  R    1:15:43      1 gpu24
+            246906   gpu_24h     tcsh     hshi  R    2:39:40      1 gpu11
+            246900   gpu_24h     bash   httse9  R    2:55:30      1 gpu10
+            246879   gpu_24h     bash     cbai  R    3:36:34      1 gpu12
+            246880   gpu_24h     bash     cbai  R    3:36:34      1 gpu14
+            246882   gpu_24h     bash    qxlai  R    3:36:34      1 gpu44
+            246874   gpu_24h     bash   cyhong  R    3:57:33      1 gpu15
+            246866   gpu_24h  python3    mhxia  R    4:16:27      1 gpu13
+            246864   gpu_24h     bash mxchen21  R    4:16:57      1 gpu17
+            246852   gpu_24h     bash   wlchen  R    4:29:34      1 gpu13
+            246839   gpu_24h     bash   xiwang  R    5:22:37      1 gpu9
+            246836   gpu_24h     bash    taohu  R    6:09:08      1 gpu24
+            246786   gpu_24h     bash    qxlai  R    9:24:22      1 gpu46
+            246777   gpu_24h     tcsh    mhxia  R    9:43:50      1 gpu31
+            246771   gpu_24h     bash    qxlai  R    9:51:42      1 gpu23
+            246770   gpu_24h     bash     zlhe  R    9:58:57      1 projgpu8
+            246769   gpu_24h     bash     zlhe  R   10:00:28      1 projgpu8
+            246768   gpu_24h     bash     zlhe  R   10:03:30      1 projgpu8
+            246764   gpu_24h     bash     zlhe  R   10:11:11      1 projgpu3
+            246763   gpu_24h     bash     cbai  R   10:16:45      1 gpu14
+            246762   gpu_24h     bash     cbai  R   10:17:15      1 gpu12
+            246752   gpu_24h     bash    lyluo  R   10:54:09      1 gpu25
+            246753   gpu_24h     bash    lyluo  R   10:54:09      1 gpu37
+            246747   gpu_24h     bash     yuli  R   11:10:47      1 gpu43
+            246244   gpu_24h      zsh   wangty  R   11:12:18      1 projgpu8
+            246744   gpu_24h     bash     yuli  R   11:12:48      1 gpu44
+            246424   gpu_24h     bash wltang21  R   11:42:33      1 gpu32
+            246712   gpu_24h     bash     qdou  R   18:38:42      1 gpu27
+            246710   gpu_24h     bash     qdou  R   18:44:15      1 gpu21
+            246656   gpu_24h     bash     yuli  R   20:02:15      1 gpu31
+            246637   gpu_24h     bash mxchen21  R   20:39:02      1 gpu19
+            246636   gpu_24h     bash mxchen21  R   20:45:31      1 gpu8
+            246628   gpu_24h     bash   bqyang  R   21:05:16      1 gpu16
+            246623   gpu_24h     bash   httse9  R   21:17:30      1 gpu15
+            246612   gpu_24h     bash    ymjin  R   21:48:03      1 gpu29
+            246564   gpu_24h     bash    liuhy  R   22:44:43      1 projgpu5
+            246565   gpu_24h     bash    qxtan  R   23:54:52      1 gpu15
+            246566   gpu_24h     bash    qxtan  R   23:54:52      1 gpu19
+            246835  special4     bash    khhui  R    6:09:08      1 projgpu7
+            246104  special4     bash   wangty  R 2-10:22:32      1 projgpu7
+            246095  special4     bash    khhui  R 2-10:39:21      1 projgpu7
+            243345  special3     bash    tjliu  R 12-10:25:53      1 gpu4
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> cat ../Logs/classifier-balancing/squareroot.log  
+/var/spool/slurmd/job246927/slurm_script: line 11: activate: No such file or directory
+Loading dataset from: /research/dept8/fyp21/lj2104/datasets/ImageNet
+{'coslr': True,
+ 'criterions': {'PerformanceLoss': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/loss/SoftmaxLoss.py',
+                                    'loss_params': {},
+                                    'optim_params': None,
+                                    'weight': 1.0}},
+ 'endlr': 0.0,
+ 'last': False,
+ 'memory': {'centroids': False, 'init_centroids': False},
+ 'model_dir': None,
+ 'networks': {'classifier': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/DotProductClassifier.py',
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'feat_dim': 2048,
+                                        'log_dir': './logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'num_classes': 1000,
+                                        'stage1_weights': False}},
+              'feat_model': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/ResNext50Feature.py',
+                             'fix': False,
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'dropout': None,
+                                        'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'stage1_weights': False,
+                                        'use_fc': False,
+                                        'use_selfatt': False}}},
+ 'shuffle': False,
+ 'training_opt': {'backbone': 'resnext50',
+                  'batch_size': 256,
+                  'dataset': 'ImageNet_LT',
+                  'display_step': 10,
+                  'feature_dim': 2048,
+                  'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                  'log_root': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT',
+                  'num_classes': 1000,
+                  'num_epochs': 180,
+                  'num_workers': 12,
+                  'open_threshold': 0.1,
+                  'sampler': {'alpha': 1.0,
+                              'cycle': 0,
+                              'decay_gap': 30,
+                              'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/data/MixedPrioritizedSampler.py',
+                              'epochs': 180,
+                              'fixed_scale': 1,
+                              'lam': 1.0,
+                              'manual_only': True,
+                              'nroot': 2.0,
+                              'ptype': 'score',
+                              'rescale': False,
+                              'root_decay': None,
+                              'type': 'MixedPrioritizedSampler'},
+                  'scheduler_params': {'gamma': 0.1, 'step_size': 30},
+                  'stage': 'resnext50_square_e90',
+                  'sub_dir': 'models'}}
+Loading data from ./data/ImageNet_LT/ImageNet_LT_train.txt
+Use data transformation: Compose(
+    RandomResizedCrop(size=(224, 224), scale=(0.08, 1.0), ratio=(0.75, 1.3333), interpolation=PIL.Image.BILINEAR)
+    RandomHorizontalFlip(p=0.5)
+    ColorJitter(brightness=[0.6, 1.4], contrast=[0.6, 1.4], saturation=[0.6, 1.4], hue=None)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+115846
+Using sampler:  <class '.MixedPrioritizedSampler'>
+Sampler parameters:  {'alpha': 1.0, 'cycle': 0, 'decay_gap': 30, 'epochs': 180, 'fixed_scale': 1, 'lam': 1.0, 'manual_only': True, 'nroot': 2.0, 'ptype': 'score', 'rescale': False, 'root_decay': None}
+====> Decay GAP: 30
+FixedWeights: 115846.0
+Loading data from ./data/ImageNet_LT/ImageNet_LT_train.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+115846
+No sampler.
+Shuffle is True.
+Loading data from ./data/ImageNet_LT/ImageNet_LT_val.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+20000
+No sampler.
+Shuffle is True.
+Loading data from ./data/ImageNet_LT/ImageNet_LT_test.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+50000
+No sampler.
+Shuffle is True.
+Using 4 GPUs.
+Loading Dot Product Classifier.
+Random initialized classifier weights.
+Loading Scratch ResNext 50 Feature Model.
+No Pretrained Weights For Feature Model.
+Using steps for training.
+Initializing model optimizer.
+===> Using coslr eta_min=0.0
+Loading Softmax Loss.
+===> Saving cfg parameters to:  /research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90/cfg.yaml
+Phase: train
+Do shuffle??? ---  False
+/research/dept8/fyp21/lj2104/anaconda3/envs/lyyRIDE/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:123: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> cat ../Logs/classifier-balancing/squareroot.log  
+/var/spool/slurmd/job246927/slurm_script: line 11: activate: No such file or directory
+Loading dataset from: /research/dept8/fyp21/lj2104/datasets/ImageNet
+{'coslr': True,
+ 'criterions': {'PerformanceLoss': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/loss/SoftmaxLoss.py',
+                                    'loss_params': {},
+                                    'optim_params': None,
+                                    'weight': 1.0}},
+ 'endlr': 0.0,
+ 'last': False,
+ 'memory': {'centroids': False, 'init_centroids': False},
+ 'model_dir': None,
+ 'networks': {'classifier': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/DotProductClassifier.py',
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'feat_dim': 2048,
+                                        'log_dir': './logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'num_classes': 1000,
+                                        'stage1_weights': False}},
+              'feat_model': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/ResNext50Feature.py',
+                             'fix': False,
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                             'params': {'dataset': 'ImageNet_LT',
+                                        'dropout': None,
+                                        'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                                        'stage1_weights': False,
+                                        'use_fc': False,
+                                        'use_selfatt': False}}},
+ 'shuffle': False,
+ 'training_opt': {'backbone': 'resnext50',
+                  'batch_size': 256,
+                  'dataset': 'ImageNet_LT',
+                  'display_step': 10,
+                  'feature_dim': 2048,
+                  'log_dir': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90',
+                  'log_root': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT',
+                  'num_classes': 1000,
+                  'num_epochs': 180,
+                  'num_workers': 12,
+                  'open_threshold': 0.1,
+                  'sampler': {'alpha': 1.0,
+                              'cycle': 0,
+                              'decay_gap': 30,
+                              'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/data/MixedPrioritizedSampler.py',
+                              'epochs': 180,
+                              'fixed_scale': 1,
+                              'lam': 1.0,
+                              'manual_only': True,
+                              'nroot': 2.0,
+                              'ptype': 'score',
+                              'rescale': False,
+                              'root_decay': None,
+                              'type': 'MixedPrioritizedSampler'},
+                  'scheduler_params': {'gamma': 0.1, 'step_size': 30},
+                  'stage': 'resnext50_square_e90',
+                  'sub_dir': 'models'}}
+Loading data from ./data/ImageNet_LT/ImageNet_LT_train.txt
+Use data transformation: Compose(
+    RandomResizedCrop(size=(224, 224), scale=(0.08, 1.0), ratio=(0.75, 1.3333), interpolation=PIL.Image.BILINEAR)
+    RandomHorizontalFlip(p=0.5)
+    ColorJitter(brightness=[0.6, 1.4], contrast=[0.6, 1.4], saturation=[0.6, 1.4], hue=None)
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+115846
+Using sampler:  <class '.MixedPrioritizedSampler'>
+Sampler parameters:  {'alpha': 1.0, 'cycle': 0, 'decay_gap': 30, 'epochs': 180, 'fixed_scale': 1, 'lam': 1.0, 'manual_only': True, 'nroot': 2.0, 'ptype': 'score', 'rescale': False, 'root_decay': None}
+====> Decay GAP: 30
+FixedWeights: 115846.0
+Loading data from ./data/ImageNet_LT/ImageNet_LT_train.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+115846
+No sampler.
+Shuffle is True.
+Loading data from ./data/ImageNet_LT/ImageNet_LT_val.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+20000
+No sampler.
+Shuffle is True.
+Loading data from ./data/ImageNet_LT/ImageNet_LT_test.txt
+Use data transformation: Compose(
+    Resize(size=256, interpolation=PIL.Image.BILINEAR)
+    CenterCrop(size=(224, 224))
+    ToTensor()
+    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+)
+50000
+No sampler.
+Shuffle is True.
+Using 4 GPUs.
+Loading Dot Product Classifier.
+Random initialized classifier weights.
+Loading Scratch ResNext 50 Feature Model.
+No Pretrained Weights For Feature Model.
+Using steps for training.
+Initializing model optimizer.
+===> Using coslr eta_min=0.0
+Loading Softmax Loss.
+===> Saving cfg parameters to:  /research/dept8/fyp21/lj2104/lyy/classifier-balancing/logs/ImageNet_LT/models/resnext50_square_e90/cfg.yaml
+Phase: train
+Do shuffle??? ---  False
+/research/dept8/fyp21/lj2104/anaconda3/envs/lyyRIDE/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:123: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> scance;[Kl246927 246927
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            246927    gpu_2h ImageNet   yyluo9 CG       1:20      1 gpu40
+            243000 kinglyuke     tmux    yfgao PD       0:00      1 (QOSMaxGRESPerUser)
+            243207 kinglyuke     tmux     lijj PD       0:00      1 (QOSMaxGRESPerUser)
+            246110  cwfu_gpu     bash   fblu21 PD       0:00      1 (Resources)
+            246802 batch_72h  2atss80   sjqian PD       0:00      1 (Resources)
+            246878 batch_72h      r11   pgchen PD       0:00      1 (Priority)
+            246881 batch_72h convnerf   ylchen PD       0:00      1 (Priority)
+            246916 batch_72h a_baseli   pgchen PD       0:00      1 (Priority)
+            246902 batch_72h       a1   pgchen PD       0:00      1 (Priority)
+            246926 batch_72h ImageNet   yyluo9 PD       0:00      1 (Priority)
+            246610 pheng_gpu     bash   jzwang PD       0:00      1 (Resources)
+            246804 pheng_gpu     bash   jpli21 PD       0:00      1 (AssocGrpGRES)
+            246652  cwfu_gpu     bash   fblu21 PD       0:00      1 (Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions)
+            246803    gpu_2h     bash yukangch PD       0:00      1 (QOSMaxGRESPerUser)
+            246826  ex_batch     TEST   zxzhao PD       0:00      1 (QOSMaxGRESPerUser)
+            246527  ex_batch    jrgpu   hcchow PD       0:00      1 (Dependency)
+            245856   gpu_24h      zsh   wangty PD       0:00      1 (ReqNodeNotAvail, UnavailableNodes:gpu23)
+            246047   gpu_24h   python    khhui PD       0:00      1 (AssocGrpGRES)
+            246186   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            246604   gpu_24h     bash    liuhy PD       0:00      1 (QOSMaxGRESPerUser)
+            246760   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246923   gpu_24h     bash   fblu21 PD       0:00      1 (QOSMaxGRESPerUser)
+            246925   gpu_24h     bash   fblu21 PD       0:00      1 (Priority)
+            246921   gpu_24h     bash wltang21 PD       0:00      1 (Priority)
+            246783   gpu_24h     bash    msxie PD       0:00      1 (QOSMaxGRESPerUser)
+            246851   gpu_24h     bash wltang21 PD       0:00      1 (Resources)
+            243206 kinglyuke     tmux     lijj  R 2-15:25:08      1 projgpu1
+            242964 kinglyuke     tmux    yfgao  R 2-22:07:18      1 projgpu2
+            245705 batch_72h swin_ada   zttian  R 1-20:00:40      1 gpu3
+            246002 pheng_gpu     bash   jpli21  R    9:08:03      1 projgpu12
+            246051  cwfu_gpu     bash     mywu  R   20:07:20      1 projgpu15
+            246684 batch_72h swin_ada    linhj  R    4:30:43      1 gpu5
+            246682 batch_72h swin_ada   xinlai  R    8:29:16      1 gpu26
+            246290 pheng_gpu     bash   zxzhao  R    9:08:03      1 projgpu12
+            245706 batch_72h swin_ada   zttian  R 1-10:00:16      1 gpu22
+            246635 batch_72h  287fcos yukangch  R    8:09:42      1 gpu50
+            246120 pheng_gpu     bash   jzwang  R   11:28:29      1 projgpu4
+            246456 pheng_gpu     tmux     jqxu  R    9:08:03      1 projgpu12
+            246464 batch_72h     CIDS zszhong2  R 1-01:54:45      1 gpu49
+            246641 batch_72h swin_ada    linhj  R   16:47:27      1 gpu47
+            246666 batch_72h   hkd288   yxchen  R   16:45:07      1 gpu51
+            246634 batch_72h  278fcos yukangch  R   18:07:56      1 gpu48
+            246465 batch_72h     CIDS zszhong2  R   23:25:51      1 gpu42
+            246440 batch_72h   hkd284   yxchen  R 1-05:22:12      1 gpu53
+            246681 batch_72h swin_ada   xinlai  R   19:31:06      1 gpu6
+            246437 batch_72h  2atss79   sjqian  R 1-06:41:48      1 gpu52
+            246243 batch_72h train_ex    ymjin  R 1-23:45:38      1 gpu23
+            246661 pheng_gpu     bash  kaichen  R   10:26:25      1 projgpu3
+            246069 kinglyuke     bash   mlyang  R 2-02:50:14      1 projgpu1
+            246667 pheng_gpu     bash   bqyang  R   10:26:25      1 projgpu3
+            246519 kinglyuke     bash   mlyang  R   22:25:45      1 projgpu2
+            246821 pheng_gpu     bash    ymjin  R    6:00:49      1 projgpu3
+            246660 pheng_gpu     bash   bqyang  R   19:28:35      1 projgpu5
+            246889 pheng_gpu     bash  mrjiang  R    3:18:56      1 projgpu6
+            246846 pheng_gpu     bash      bli  R    4:56:25      1 projgpu5
+            246842 pheng_gpu     bash     qdou  R    5:05:59      1 projgpu6
+            246824 pheng_gpu     bash     qdou  R    6:31:04      1 projgpu4
+            246799 kinglyuke      zsh   zhangy  R    8:41:25      1 projgpu2
+            246795 pheng_gpu     bash      bli  R    8:43:17      1 projgpu10
+            246791 pheng_gpu     bash    ymjin  R    9:01:37      1 projgpu12
+            246784 kinglyuke     bash   mlyang  R    9:30:36      1 projgpu1
+            246741 pheng_gpu     tmux     jqxu  R   11:28:14      1 projgpu4
+            246683 pheng_gpu     bash     qdou  R   19:21:08      1 projgpu11
+            246591 pheng_gpu     bash   jpli21  R   19:50:12      1 projgpu11
+            246645 pheng_gpu     bash   bqyang  R   20:15:04      1 projgpu6
+            246598 kinglyuke     bash   mlyang  R   22:23:44      1 projgpu2
+            246455 pheng_gpu     tmux     jqxu  R 1-05:48:16      1 projgpu5
+            246432 kinglyuke      zsh   zhangy  R 1-06:49:37      1 projgpu2
+            246431 kinglyuke      zsh   zhangy  R 1-06:50:38      1 projgpu2
+            246396 pheng_gpu     bash  mrjiang  R 1-09:36:58      1 projgpu5
+            246394 pheng_gpu     bash  mrjiang  R 1-09:37:14      1 projgpu10
+            246393 pheng_gpu     bash  mrjiang  R 1-09:37:23      1 projgpu11
+            246387 pheng_gpu     bash   yangyu  R 1-09:52:15      1 projgpu9
+            246384 pheng_gpu     bash   yangyu  R 1-09:59:06      1 projgpu9
+            246364 pheng_gpu     bash  kaichen  R 1-10:54:34      1 projgpu6
+            246366 pheng_gpu     bash  kaichen  R 1-10:54:34      1 projgpu5
+            246362 pheng_gpu     bash  kaichen  R 1-10:58:12      1 projgpu6
+            246351 pheng_gpu     bash    ymjin  R 1-12:10:51      1 projgpu6
+            246224 pheng_gpu     bash   jpli21  R 2-01:08:50      1 projgpu6
+            246920    gpu_2h     bash    kcli9  R      49:02      1 gpu39
+            246915    gpu_2h     bash     yuli  R    1:52:38      1 gpu41
+            246601  ex_batch   job.sh   jpli21  R    5:42:50      1 gpu55
+            246877    gpu_8h     bash    hjsu9  R    3:56:45      1 gpu25
+            246876    gpu_8h     bash    hjsu9  R    3:57:11      1 gpu38
+            246856    gpu_8h     bash    hjsu9  R    4:28:34      1 gpu41
+            246855    gpu_8h     bash    hjsu9  R    4:28:45      1 gpu38
+            246837    gpu_8h     bash jzzhang2  R    5:48:27      1 gpu38
+            246525  ex_batch    jrgpu   hcchow  R 1-02:02:04      1 gpu57
+            246494  ex_batch      HiC   qyli21  R 1-04:57:03      1 gpu58
+            246446  ex_batch     TEST   zxzhao  R 1-06:04:56      1 gpu54
+            246246   gpu_24h     bash     mywu  R   11:37:37      1 projgpu8
+            246263   gpu_24h     bash    liuhy  R   22:17:45      1 gpu1
+            246504   gpu_24h     bash    rygao  R    4:42:15      1 gpu28
+            246642   gpu_24h     bash yljiang0  R       2:42      1 gpu30
+            246646   gpu_24h     bash   fblu21  R       7:57      1 gpu33
+            246372   gpu_24h     bash    msxie  R   13:53:08      1 gpu18
+            246520   gpu_24h liga_bas   ylchen  R   12:33:53      1 gpu45
+            246405   gpu_24h     bash    msxie  R    5:31:20      1 gpu34
+            246730   gpu_24h    test4 jjxiong9  R    3:37:15      1 gpu16
+            246556   gpu_24h    test2 jjxiong9  R   21:23:45      1 gpu10
+            246816   gpu_24h     bash    ymjin  R    4:42:47      1 projgpu9
+            243178   special     bash  wuzheng  R 13-03:01:13      1 gpu2
+            246736   gpu_24h     bash  kltang9  R   10:18:28      1 gpu7
+            246602   gpu_24h     bash   jpli21  R   19:39:41      1 gpu27
+            246593   gpu_24h     bash   jpli21  R   21:07:29      1 gpu24
+            246800   gpu_24h     bash   xiwang  R    7:28:23      1 gpu9
+            246868   gpu_24h  python3    mhxia  R    3:37:46      1 gpu20
+            246914   gpu_24h   python     jyhu  R    1:54:46      1 gpu8
+            246654   gpu_24h     bash   fblu21  R       4:13      1 gpu35
+            246883   gpu_24h     bash    qxlai  R    3:35:45      1 gpu29
+            246643   gpu_24h     bash yljiang0  R       2:12      1 gpu36
+            246922   gpu_24h      zsh   yqchen  R      11:38      1 gpu37
+            246919   gpu_24h     bash    taohu  R    1:16:55      1 gpu24
+            246906   gpu_24h     tcsh     hshi  R    2:40:52      1 gpu11
+            246900   gpu_24h     bash   httse9  R    2:56:42      1 gpu10
+            246879   gpu_24h     bash     cbai  R    3:37:46      1 gpu12
+            246880   gpu_24h     bash     cbai  R    3:37:46      1 gpu14
+            246882   gpu_24h     bash    qxlai  R    3:37:46      1 gpu44
+            246874   gpu_24h     bash   cyhong  R    3:58:45      1 gpu15
+            246866   gpu_24h  python3    mhxia  R    4:17:39      1 gpu13
+            246864   gpu_24h     bash mxchen21  R    4:18:09      1 gpu17
+            246852   gpu_24h     bash   wlchen  R    4:30:46      1 gpu13
+            246839   gpu_24h     bash   xiwang  R    5:23:49      1 gpu9
+            246836   gpu_24h     bash    taohu  R    6:10:20      1 gpu24
+            246786   gpu_24h     bash    qxlai  R    9:25:34      1 gpu46
+            246777   gpu_24h     tcsh    mhxia  R    9:45:02      1 gpu31
+            246771   gpu_24h     bash    qxlai  R    9:52:54      1 gpu23
+            246770   gpu_24h     bash     zlhe  R   10:00:09      1 projgpu8
+            246769   gpu_24h     bash     zlhe  R   10:01:40      1 projgpu8
+            246768   gpu_24h     bash     zlhe  R   10:04:42      1 projgpu8
+            246764   gpu_24h     bash     zlhe  R   10:12:23      1 projgpu3
+            246763   gpu_24h     bash     cbai  R   10:17:57      1 gpu14
+            246762   gpu_24h     bash     cbai  R   10:18:27      1 gpu12
+            246752   gpu_24h     bash    lyluo  R   10:55:21      1 gpu25
+            246753   gpu_24h     bash    lyluo  R   10:55:21      1 gpu37
+            246747   gpu_24h     bash     yuli  R   11:11:59      1 gpu43
+            246244   gpu_24h      zsh   wangty  R   11:13:30      1 projgpu8
+            246744   gpu_24h     bash     yuli  R   11:14:00      1 gpu44
+            246424   gpu_24h     bash wltang21  R   11:43:45      1 gpu32
+            246712   gpu_24h     bash     qdou  R   18:39:54      1 gpu27
+            246710   gpu_24h     bash     qdou  R   18:45:27      1 gpu21
+            246656   gpu_24h     bash     yuli  R   20:03:27      1 gpu31
+            246637   gpu_24h     bash mxchen21  R   20:40:14      1 gpu19
+            246636   gpu_24h     bash mxchen21  R   20:46:43      1 gpu8
+            246628   gpu_24h     bash   bqyang  R   21:06:28      1 gpu16
+            246623   gpu_24h     bash   httse9  R   21:18:42      1 gpu15
+            246612   gpu_24h     bash    ymjin  R   21:49:15      1 gpu29
+            246564   gpu_24h     bash    liuhy  R   22:45:55      1 projgpu5
+            246565   gpu_24h     bash    qxtan  R   23:56:04      1 gpu15
+            246566   gpu_24h     bash    qxtan  R   23:56:04      1 gpu19
+            246835  special4     bash    khhui  R    6:10:20      1 projgpu7
+            246104  special4     bash   wangty  R 2-10:23:44      1 projgpu7
+            246095  special4     bash    khhui  R 2-10:40:33      1 projgpu7
+            243345  special3     bash    tjliu  R 12-10:27:05      1 gpu4
+(lyyRIDE) linux10:/research/dept8/fyp21/lj2104/lyy/classifier-balancing> squeuecancel 246927cat ../Logs/classifier-balancing/squareroot.log  
+/var/spool/slurmd/job246927/slurm_script: line 11: activate: No such file or directory
+Loading dataset from: /research/dept8/fyp21/lj2104/datasets/ImageNet
+{'coslr': True,
+ 'criterions': {'PerformanceLoss': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/loss/SoftmaxLoss.py',
+                                    'loss_params': {},
+                                    'optim_params': None,
+                                    'weight': 1.0}},
+ 'endlr': 0.0,
+ 'last': False,
+ 'memory': {'centroids': False, 'init_centroids': False},
+ 'model_dir': None,
+ 'networks': {'classifier': {'def_file': '/research/dept8/fyp21/lj2104/lyy/classifier-balancing/models/DotProductClassifier.py',
+                             'optim_params': {'lr': 0.1,
+                                              'momentum': 0.9,
+                                              'weight_decay': 0.0005},
+                    
