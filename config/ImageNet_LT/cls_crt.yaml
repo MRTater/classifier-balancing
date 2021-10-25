@@ -12,19 +12,19 @@ model_dir: ./logs/ImageNet_LT/models/resnext50_uniform_e90
 networks:
   classifier:
     def_file: ./models/DotProductClassifier.py
-    optim_params: {lr: 0.2, momentum: 0.9, weight_decay: 0.0005}
+    optim_params: {lr: 0.1, momentum: 0.9, weight_decay: 0.0005}
     params: {dataset: ImageNet_LT, feat_dim: 2048, log_dir: ./logs/ImageNet_LT/clslearn/retrain_uni2ban,
       num_classes: 1000, stage1_weights: false}
   feat_model:
     def_file: ./models/ResNext50Feature.py
     fix: true
-    optim_params: {lr: 0.2, momentum: 0.9, weight_decay: 0.0005}
+    optim_params: {lr: 0.1, momentum: 0.9, weight_decay: 0.0005}
     params: {dataset: ImageNet_LT, dropout: null, log_dir: ./logs/ImageNet_LT/clslearn/retrain_uni2ban,
       stage1_weights: false, use_fc: false, use_selfatt: false}
 shuffle: true
 training_opt:
   backbone: resnext50
-  batch_size: 512
+  batch_size: 256
   dataset: ImageNet_LT
   display_step: 10
   feature_dim: 2048
